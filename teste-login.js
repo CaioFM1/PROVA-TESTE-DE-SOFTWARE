@@ -9,7 +9,7 @@ async function digitarLento(elemento, texto, delay = 250) {
   }
 }
 
-// Função que realiza o teste de login na página do Hankeds
+// Função que realiza o teste de login na página do Hanked
 async function testarHankeds(driver) {
   const url = 'https://www.hankeds.com.br/prova/login2.html';
   await driver.get(url); // Abre a página de login do Hankeds
@@ -78,9 +78,9 @@ async function testarHeroku(driver) {
   const driver = await new Builder().forBrowser('chrome').build(); // Abre o Chrome com Selenium
 
   try {
-    await testarHankeds(driver);  // ✅ Só o teste Hankeds vai rodar aqui
+    await testarHankeds(driver);  //  Só o teste Hankeds vai rodar aqui
     // await driver.sleep(2000);
-    // await testarHeroku(driver); // ❌ Comentado, não será executado
+    // await testarHeroku(driver); // Comentado, não será executado
 
   } catch (err) {
     console.error('❌ Erro durante execução:', err);
